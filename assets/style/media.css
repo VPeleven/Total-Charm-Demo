@@ -1,0 +1,135 @@
+@media screen and (max-width:1440px) {
+    .main-navbar{
+        height: 120px;
+    }
+    .navbar-link-item>a{
+        font-size: 16px;
+    }
+    .main-header-gallery{
+        height: calc(100vh - 120px);
+    }
+    .main-navbar-inner{
+        height: 80px;
+        width: 1180px;
+    }
+    .navbar-links{
+        width: 60%;
+    }
+    .navbar-logo>a>img{
+        height: 80px;
+    }
+    .main-header-gallery-content {
+        width: 55%;
+        padding-left: 170px;
+    }
+    .swiper-container{
+        width: 45%;
+    }
+    .main-header-gallery-title>h1{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .main-header-gallery-text>p {
+        font-size: 14px;
+        margin-bottom: 30px;
+        line-height: 1.8;
+    }
+    .main-header-gallery-content-inner{
+        width: 85%;
+    }
+    .main-header-gallery-readmore>a {
+        font-size: 16px;
+    }
+    .swiper-slide-img>img{
+        height: calc(100vh - 120px);
+    }
+    .lectors-inner{
+        width: calc(100% - 340px);
+    }
+    .lectors-inner-img>img{
+        height: 360px;
+    }
+    .lectors-inner-img{
+        height: 360px;
+        width: 360px;
+    }
+    .lectors-inner-name>h1 {
+        font-size: 24px;
+    }
+    .lectors-inner-text>p {
+        font-size: 14px;
+    }
+    .lectors-inner-position > p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .courses-inner {
+        width: calc(100% - 340px);
+    }
+    .courses-title > h3 {
+        font-size: 26px;
+    }
+    .courses-text>p{
+        font-size: 14px;
+    }
+    .course-drop-img>img {
+        height: 80px;
+    }
+    .blue-circle {
+        top: 5px;
+        right: 50%;
+        transform: translateX(47%);
+        width: 120px;
+        height: 120px;
+    }
+    .course-drop-title>p {
+        font-size: 18px;
+    }
+    .accordion-button {
+        font-size: 16px;
+        height: 50px;
+    }
+    
+    .accordion-header {
+        height: 50px;
+    }
+    .accordion-body-item>p{
+        font-size: 16px;
+    }
+    
+    .accordion-body-item > strong {
+        font-size: 16px;
+    }
+    .gallery-title > p{
+        font-size: 26px;
+    }
+    .gallery-item{
+        height: 280px;
+    }
+    .gallery-item>img{
+        height: 260px;
+        margin: 0;
+    }
+    .footer-inner{
+        width: calc(100%  - 340px);
+    }
+    .footer-left-title>p {
+        font-size: 18px;
+    }
+    .footer-left{
+        margin-right: 40px;
+    }
+    .footer-left-text>p {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+    .footer-middle-text>p {
+        font-size: 14px;
+    }
+    .footer-social-item>a>img {
+        height: 20px;
+    }
+}
+@media screen and (max-width:1024px) {
+    
+}

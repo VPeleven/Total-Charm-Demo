@@ -1,0 +1,562 @@
+@font-face {
+    font-family: 'Notosans';
+    src: url(/assets/fonts/NotoSansGeorgian-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/assets/fonts/Montserrat-Light.otf);
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Medium';
+    src: url(/assets/fonts/PragmaticaMedium.otf);
+}
+
+@font-face {
+    font-family: 'LucidaGrande';
+    src: url(/assets/fonts//LucidaGrande.ttf);
+}
+
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: bpg_quadrosquare_caps_2013, sans-serif;
+    font-size: 16px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+.main-header {
+    margin-bottom: 50px;
+}
+
+.main-header-inner {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(155deg, rgba(255, 255, 255, 1) 20%, rgba(202, 225, 242, 1) 100%);
+    height: 100vh;
+
+}
+
+.main-navbar {
+
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.main-navbar-inner {
+    width: 1660px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 8px;
+}
+
+.navbar-logo>a>img {
+    height: 100px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.navbar-link-item>a {
+    color: rgb(81, 84, 93, .8);
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Notosans';
+    font-weight: bold;
+}
+
+.navbar-link-item>a:hover {
+    color: #68a9d9;
+}
+
+.main-header-gallery {
+    height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
+position: relative;
+
+}
+
+.main-header-gallery-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    position: relative;
+    padding-left: 280px;
+
+}
+
+.main-header-gallery-content-inner {
+    width: 70%;
+
+}
+
+.main-header-gallery-title>h1 {
+    color: #423633;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: 'Notosans';
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    z-index: 54;
+}
+
+.main-header-gallery-text>p {
+    color: #51545d;
+    font-size: 16px;
+    font-family: 'Notosans';
+    margin-bottom: 40px;
+    line-height: 2;
+}
+
+.main-header-gallery-readmore {
+    height: 50px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68a9d9;
+    border-radius: 8px;
+}
+
+.main-header-gallery-readmore>a {
+    color: white;
+    font-size: 18px;
+    font-family: 'Notosans';
+    text-decoration: none;
+}
+
+.main-header-gallery-readmore:hover {
+    background-color: #357bad;
+}
+
+
+
+/* SWIPER */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide-img>img{
+    height: calc(100vh - 160px);
+}
+
+
+
+/* LECTORS */
+.lectors {
+    margin-bottom: 60px;
+}
+
+.lectors-inner {
+    width: calc(100% - 560px);
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(202, 225, 242, 1) 100%);
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    /* background-image: url('/assets/img/shape-2.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+.lectors-inner-content {
+    width: 50%;
+}
+
+.lectors-inner-name>h1 {
+    color: #423633;
+    font-size: 36px;
+    font-family: 'Notosans';
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lectors-inner-position>p {
+    color: #b5958e;
+    font-size: 18px;
+    font-family: 'Notosans', 'Montserrat';
+    margin-bottom: 40px;
+}
+
+.lectors-inner-text>p {
+    color: #51545d;
+    font-size: 18px;
+    font-family: 'Notosans', 'Montserrat';
+    line-height: 1.8;
+}
+
+.lectors-inner-person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    position: relative;
+
+}
+
+.lectors-inner-img {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    z-index: 2;
+    background: rgb(104, 169, 217);
+    background: linear-gradient(155deg, rgba(104, 169, 217, 1) 0%, rgba(202, 225, 242, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.lectors-inner-img>img {
+    height: 500px;
+    object-fit: contain;
+}
+
+
+.swiper-container.lectors {
+    width: 100%;
+}
+
+
+/* Courses */
+
+.courses-inner {
+    width: calc(100% - 560px);
+    margin: 0 auto 120px;
+}
+
+.courses-title>h3 {
+    text-align: center;
+    color: #423633;
+    font-size: 36px;
+    font-family: 'Notosans';
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.courses-text {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.courses-text>p {
+    color: rgb(81, 84, 93, .8);
+    font-size: 18px;
+    font-family: 'Notosans';
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.course-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.course-drop {
+    padding: 30px 0;
+    width: 48%;
+    border: 2px solid rgba(202, 225, 242, 1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.course-drop-img>img {
+    height: 120px;
+    margin-bottom: 40px;
+}
+
+.course-drop-title>p {
+    color: #423633;
+    font-size: 24px;
+    font-family: 'Notosans', 'Montserrat';
+    margin-bottom: 50px;
+    font-weight: bold;
+
+}
+
+.course-drop-button {
+    height: 60px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68a9d9;
+    border-radius: 8px;
+}
+
+.course-drop-button:hover {
+    background-color: #357bad;
+}
+
+.course-drop-button>a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Notosans', 'Montserrat';
+}
+
+.blue-circle {
+    z-index: -1;
+    position: absolute;
+    top: 1px;
+    right: 50%;
+    transform: translateX(50%);
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(155deg, rgba(255, 255, 255, 1) 35%, rgba(206, 233, 254, 1) 100%);
+}
+
+.course-drop-allcourses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-drop-allcourses>a {
+    color: #357bad;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Notosans', 'Montserrat';
+}
+
+.accordion {
+    width: 80%;
+}
+
+.accordion-button {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    height: 70px;
+    font-family: 'Notosans', 'Montserrat';
+}
+
+.accordion-header {
+    background-color: #68a9d9;
+    border-radius: 8px;
+    height: 70px;
+}
+.accordion-body-item{
+
+    width: 100%;
+    border-bottom: 1px solid rgb(66, 54, 51, .1) ;
+    padding: 10px 0 ;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.accordion-body-item>p{
+    color: #423633;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Notosans', 'Montserrat';
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.accordion-body-item > strong {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Notosans', 'Montserrat';
+}
+
+
+
+/* GALLERY */
+.gallery {
+    margin-bottom: 120px;
+}
+
+.gallery-inner {
+    padding: 0 60px;
+}
+
+.gallery-title>p {
+    text-align: center;
+    color: #423633;
+    font-size: 36px;
+    font-family: 'Notosans';
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+
+.gallery-images {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    width: 33%;
+    overflow: hidden;
+    height: 400px;
+}
+
+.gallery-item>img {
+    height: 400px;
+    object-fit: contain;
+    margin: 35px 0;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #357bad;
+}
+
+.footer-inner {
+    width: calc(100% - 560px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    justify-content: space-between;
+
+}
+
+.footer-left-title>p {
+    color: white;
+    font-size: 22px;
+    font-family: 'Notosans';
+    margin-bottom: 30px;
+}
+
+.footer-left-text {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left-text>p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Notosans';
+    margin: 0 15px 20px 0;
+}
+
+.footer-middle {
+    display: flex;
+}
+
+.footer-middle-text {
+    margin-right: 40px;
+}
+
+.footer-middle-text>p {
+    color: white;
+    font-size: 16px;
+    font-family: 'Notosans';
+    margin-bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-social-item>a>img {
+    height: 28px;
+    margin-right: 20px;
+}
+
+
+/*  */
+
+.lectors-slider .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.lectors-slider .swiper-wrapper {
+    padding-bottom: 55px;
+}
