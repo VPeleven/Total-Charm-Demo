@@ -560,3 +560,15 @@ position: relative;
 .lectors-slider .swiper-wrapper {
     padding-bottom: 55px;
 }
+
+
+
+
+/* ABOUT-US */
+
+
+.about-us-header-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
