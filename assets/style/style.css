@@ -108,6 +108,102 @@ p {
     font-weight: bold;
 }
 
+.btn-secondary {
+    color: rgb(81, 84, 93, .8) !important;
+    font-size: 18px !important;
+    font-family: 'Notosans' !important;
+    font-weight: bold !important;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.btn-secondary:hover {
+    color: #68a9d9 !important;
+
+}
+
+.btn-secondary:focus {
+    box-shadow: none !important;
+}
+
+.dropdown-item {
+    color: rgb(81, 84, 93, .8) !important;
+    font-size: 18px !important;
+    font-family: 'Notosans' !important;
+    font-weight: bold !important;
+    background-color: transparent !important;
+    border: none !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.dropdown-item>a {
+    color: rgb(81, 84, 93, .8) !important;
+    font-size: 18px !important;
+    font-family: 'Notosans' !important;
+    font-weight: bold !important;
+    background-color: transparent !important;
+    border: none !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.dropdown-item>a:hover {
+    color: #68a9d9 !important;
+
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+
 .navbar-link-item>a:hover {
     color: #68a9d9;
 }
@@ -132,7 +228,7 @@ p {
 }
 
 .main-header-gallery-content-inner {
-    width: 70%;
+    width: 85%;
 
 }
 
@@ -161,7 +257,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: a;
+    background-color: #68a9d9;
     border-radius: 8px;
 }
 
@@ -182,6 +278,14 @@ p {
 .swiper-container {
     width: 100%;
     height: 100%;
+}
+
+.swiper-slide-img>img {
+    width: 100%;
+}
+
+.swiper-slide {
+    width: auto;
 }
 
 .swiper-slide {
@@ -335,7 +439,9 @@ p {
     align-items: center;
     flex-direction: column;
     position: relative;
+    height: fit-content;
 }
+
 
 .course-drop-img>img {
     height: 120px;
@@ -568,12 +674,14 @@ p {
 
 
 /* ABOUT-US */
-.main-header.about-mrg{
+.main-header.about-mrg {
     margin-bottom: 0;
 }
-.main-header-inner.about-us-height{
+
+.main-header-inner.about-us-height {
     height: unset;
 }
+
 .about-us-header-title>h3 {
     text-align: center;
     color: #423633;
@@ -608,39 +716,47 @@ p {
     -webkit-align-items: center;
     align-items: center;
 }
-.about-us-item > img{
-height: 300px;
-width: 100%;
-object-fit: cover;
+
+.about-us-item>img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.about-us-header-text{
-    padding: 50px 120px ;
+.about-us-header-text {
+    padding: 50px 120px;
 }
 
-.about-us-header-text > p{
+.about-us-header-text>p {
     color: #423633;
     font-family: 'Notosans';
-    font-size: 18px;
+    font-size: 20px;
     line-height: 2;
 }
 
 /* Courses */
 
-.main-header.courses-mrg{
+.main-header.courses-mrg {
     margin-bottom: 0;
 }
-.main-header-inner.courses-height{
+
+.main-header-inner.courses-height {
     height: unset;
 }
-.courses.mg-top{
-    padding: 60px 0 ;
+
+.courses.mg-top {
+    padding: 60px 0;
 }
 
 
 /* CONTACT */
+.contact-us-inner {
+    display: flex;
+    width: 1360px;
+    margin: 0 auto;
+}
 
-.contact-us-title>h3{
+.contact-us-title>h3 {
     text-align: center;
     color: #423633;
     font-size: 36px;
@@ -648,39 +764,254 @@ object-fit: cover;
     font-weight: bold;
     margin-bottom: 60px;
 }
-.contact-us-container{
+
+.contact-us-container {
     padding: 60px 0;
 }
 
-.contact-us-form{
-    border: 2px solid white;
-    padding: 30px 60px;
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 10px;
+.contact-us-left {
+    width: 60%;
 }
-.contact-us-item-icon{
+
+.contact-us-form {
+    border-radius: 10px;
+    padding-left: 120px;
+}
+
+.contact-us-item-icon {
     display: flex;
     align-items: center;
-    width: 45%;
+    width: 35%;
 }
-.contact-us-item-icon>img{
+
+.contact-us-item-icon>img {
     margin-right: 20px;
 }
-.contact-us-item-icon > p{
+
+.contact-us-item-icon>p {
     color: #423633;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Notosans';
     font-weight: bold;
 }
-.contact-us-item-text > p{
-    color: #423633;
-    font-size: 18px;
+
+.contact-us-item-text>p {
+    color: rgb(66, 54, 51, .7);
+    font-size: 20px;
     font-family: 'Notosans';
+    font-weight: bold;
+
 }
-.contact-us-form-item{
+
+.contact-us-form-item {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
+.contact-us-right {
+    width: 40%;
+}
+
+.contact-us-form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-us-form-input>label {
+    color: rgb(66, 54, 51, .5);
+    font-size: 18px;
+    font-family: 'Notosans';
+    margin-bottom: 5px;
+}
+
+
+.contact-us-form-input>input {
+    background-color: transparent;
+    border: 0;
+    border: 1px solid rgb(66, 54, 51, .3);
+    padding: 0 20px;
+    font-size: 18px;
+    font-family: 'Notosans';
+    color: rgb(66, 54, 51, .5);
+    outline: none;
+    border-radius: 8px;
+    width: 90%;
+    height: 40px;
+}
+
+.contact-us-form-input.text>input {
+    height: 120px;
+    text-align: inherit;
+}
+
+.contact-us-submit-btn>button {
+    height: 50px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68a9d9;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-family: 'Notosans';
+}
+
+/* LECtors */
+.lectors.mg-zero {
+    margin-bottom: 0;
+}
+
+.lectors-inner.about-us-trans {
+    background: transparent !important;
+}
+
+
+/* DERMATOLOGY */
+
+
+
+.dermatology-title>h3 {
+    text-align: center;
+    color: #423633;
+    font-size: 36px;
+    font-family: 'Notosans';
+    font-weight: bold;
+    margin: 60px 0;
+}
+
+.dermatology-inner {
+    width: 1360px;
+    margin: 0 auto;
+}
+
+.reservation {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reservation-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #68a9d9;
+    margin-bottom: 50px;
+    cursor: pointer;
+
+}
+
+.reservation-item>p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Notosans';
+}
+
+.dermatology-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dermatology-option-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.dermatology-option-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #68a9d9;
+    transition: all linear .5s;
+}
+
+.dermatology-option-item:hover::after {
+    width: 100%;
+}
+
+.dermatology-option-item.active>p {
+    color: #68a9d9;
+    font-weight: bold;
+}
+
+.dermatology-option-item>p {
+    color: rgb(66, 54, 51, 1);
+    font-size: 22px;
+    font-family: 'Notosans';
+    cursor: pointer;
+}
+
+.dermatology-option-courses {
+    display: none !important;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.plastic-option-courses {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 80px;
+}
+
+.dermatology-option-courses-item {
+    width: 45%;
+    border-bottom: 1px solid rgb(66, 54, 51, .5);
+    padding: 10px 0;
+
+}
+
+.dermatology-option-courses-item>p {
+    color: rgb(66, 54, 51, 1);
+    font-size: 22px;
+    font-family: 'Notosans';
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.dermatology-option-courses-item>strong {
+    color: rgb(66, 54, 51, 1);
+    font-size: 22px;
+    font-family: 'Notosans';
+    cursor: pointer;
+}
+
+
+
+
+/*MASTER CLASS  */
+
+.master-class-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide>img {
+    width: 100%;
+}
+
+.master-classes-item {
+    padding-bottom: 60px;
+}
